@@ -5,12 +5,22 @@
     font-family: 'Open Sans';
 }
 
+body{
+    background-color: rgb(243, 240, 240);
+    margin: 0px;
+    margin-top: 0px;
+    max-width: 1000px;
+    margin: auto;
+}
+
 .flex-container {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: 300px 1fr;
 }
 
 .container {
+    grid-column: 2 / 3;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -27,8 +37,9 @@
     align-items: center;
     background-color: white;
     max-width: 300px;
-    height: 65%;
+    height: 500px;
     margin-right: 1%;
+    position: fixed;
 }
 
 .imagem {
@@ -41,6 +52,7 @@
 .title{
     margin-top: 0%;
     font-size: 40px;
+    padding-left: 7px;
 }
 
 .web{
@@ -54,6 +66,7 @@
 .text {
     font-size: 15px;
     text-align: justify;
+    padding-left: 7px;
 }
 
 .blog {
@@ -64,13 +77,14 @@
     text-decoration: none;
     border-radius: 20px;
     background-color: rgb(253, 169, 253);
-    color: black;
+    color: rgb(253, 253, 253);
     margin: auto;
     padding: 5px;
     text-align: center;
 }
 .list{
     list-style-type: none;
+    padding: 8px;
 }
 
 .inst {
@@ -91,6 +105,7 @@
 .expertise {
     margin: 10px 0;
     font-size: 30px;
+    padding-left: 7px;
 }
 
 .unix {
@@ -172,10 +187,54 @@
     margin-bottom: 10px;
     border-radius: 10px;
 }
-body{
-    background-color: rgb(243, 240, 240);
-    margin: 0px;
-    margin-top: 0px;
-    max-width: 1000px;
+
+.javascript {
+    color: white;
+    background-color: rgb(63, 204, 7);
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.react {
+    color: white;
+    background-color: rgb(15, 231, 231);
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.title-projects {
+    color: black;
+    font-size: 30px;
+    padding-left: 7px;
+}
+
+.online-store {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.link-project {
+    width: 400px;
+    background-color: #e6e6e6;
     margin: auto;
+}
+
+.repository {
+    text-align: center;
+    width: 400px;
+    margin: auto;
+    background-color: white;
+    border: 1px solid rgb(228, 226, 226);
+    padding: 8px;
+    color: black;
+}
+
+.image-project {
+    width: 400px;
+}
+
+a {
+    text-decoration: none;
 }
